@@ -26,18 +26,18 @@
                            </h1>
                         </div>
                         <div class="form-group col-sm-12 col-md-6 text-center">
-                           <h1>
-                              59
+                          <h1>
+                            {{ $totalTrabalhador }}
                            </h1>
                         </div>
                         <hr>
                         <div class="form-inline col-sm-12 col-md-12 text-center">
                            <span class="text-light small">trabalhadores residentes : 
-                                  <span class="text-bold">41</span>
+                                  <span class="text-bold"> ( <span class="font-weight-bold text-dark">{{ $totalTrabalhadorResidente }}</span> )</span>
                            </span>
 
-                           <span class="text-light small">trabalhadores residentes : 
-                                  <span class="text-bold">41</span>
+                           <span class="text-light small">trabalhadores nao residentes : 
+                                  <span class="text-bold"> ( <span class="font-weight-bold text-dark">{{ $totalTrabalhadorNãoResidente }}</span> )</span>
                            </span>
                         </div>
                     </div>
@@ -66,17 +66,17 @@
                       </div>
                       <div class="form-group col-sm-12 col-md-6 text-center">
                          <h1>
-                            59
+                            {{ $totalEstrangeiro }}
                          </h1>
                       </div>
                       <hr>
                       <div class="form-inline col-sm-12 col-md-12 text-center">
                          <span class="text-light small">Visto temporário : 
-                                <span class="text-bold">41</span>
+                                <span class="text-bold">( <span class="font-weight-bold text-dark">{{ $totalEstrangeiroVistoPrevilegiado }}</span> )</span>
                          </span>
 
                          <span class="text-light small">Visto Previlegiado : 
-                                <span class="text-bold">41</span>
+                                <span class="text-bold">( <span class="font-weight-bold text-dark">{{ $totalEstrangeiroVistoTemporario }}</span> )</span>
                          </span>
                       </div>
                   </div>

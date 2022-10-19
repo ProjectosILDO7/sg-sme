@@ -30,7 +30,6 @@ class ApiTrabalhadorController extends Controller
         $NovoTrabalhador->residente = $request->residente;
         $NovoTrabalhador->save();*/
         Trabalhador::create($request->all());
-        
         return response()->json('success');
 
     }

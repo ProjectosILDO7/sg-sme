@@ -38,8 +38,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('menu-topo', require('./components/MenuTopo.vue').default);
 Vue.component('pagina', require('./components/Pagina.vue').default);
 Vue.component('tabela-lista', require('./components/TabelaLista.vue').default);
+Vue.component('tabela-lista-estrangeiros', require('./components/TabelaListaEstrangeiros.vue').default);
 Vue.component('login', require('./components/Login.vue').default);
 Vue.component('modal-form-trabalhador', require('./components/ModalFormTrabalhador.vue').default);
+Vue.component('modal-form-estrangeiros', require('./components/ModalFormEstrangeiros.vue').default);
 Vue.component('icon-de-user', require('./components/IconUser.vue').default);
 Vue.component('form-contacto', require('./components/FormContacto.vue').default);
 Vue.component('form-contacto-right', require('./components/FormContactoRight.vue').default);

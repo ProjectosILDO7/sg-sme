@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\CidadaoEstrangeiroController;
 use App\Http\Controllers\PaginasIniciaisController;
 use App\Http\Controllers\TrabalhadorController;
 use App\Http\Controllers\UserConfigController;
@@ -29,6 +30,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::resource('/trabalhadores', TrabalhadorController::class);
+Route::resource('/estrangeiros', CidadaoEstrangeiroController::class);
+
 Route::get('/configUser/{id}', [UserConfigController::class, 'formConfigUser'])->name('userConfig')->middleware('auth');
+Route::put('/configUser/{id}', [UserConfigController::class, 'editUser'])->name('EditUserConfig')->middleware('auth');
 
 

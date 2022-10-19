@@ -61,6 +61,7 @@
             urlSobre="{{ url('/sobre') }}" 
             urlContacto="{{ url('/contacto') }}" 
             pgtrabalhadores="{{ url('/trabalhadores') }}"
+            pg-Estrangeiros="{{ url('/estrangeiros') }}"
             @auth()
               usuarioAdmin="{{ auth()->user()->admin }}" 
             @endauth
@@ -91,7 +92,7 @@
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('userConfig', auth()->user()->id) }}">
-                            {{ __('Definição') }}
+                            {{ __('Configuração') }}
                         </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -180,13 +181,14 @@
             const myChartLine = new Chart(ctxLine, {
             type: 'line',
             data: {
-                labels: ["sunday", "monday", "tuesday",
-                "wednesday", "thursday", "friday", "saturday"],
+                labels: ["Jan", "Fev", "Mar",
+                "Abr", "Maio", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dec"],
                 datasets: [{
-                label: 'Last week',
+                label: 'Registo mensal de trabalhadores',
                 backgroundColor: 'rgba(161, 198, 247, 1)',
                 borderColor: 'rgb(47, 128, 237)',
-                data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
+                data: {{ $graficoTrabalhador ?? "" }}
+                // data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
                 }]
             },
             options: {
@@ -209,13 +211,13 @@
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-            labels: ["rice", "yam", "tomato", "potato",
-            "beans", "maize", "oil"],
+            labels: ["Jan", "Fev", "Mar",
+                "Abr", "Maio", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dec"],
             datasets: [{
-                label: 'food Items',
+                label: 'Registo mensal de estrangeiros',
                 backgroundColor: 'rgba(161, 198, 247, 1)',
                 borderColor: 'rgb(47, 128, 237)',
-                data: [300, 400, 200, 500, 800, 900, 200],
+                data: {{ $graficoEstrangeiros ?? "" }},
             }]
             },
             options: {

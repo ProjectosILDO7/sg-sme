@@ -24,7 +24,7 @@ class CreateCidadaoEstrangeirosTable extends Migration
             $table->date('data_emissao');
             $table->date('data_caducidade');
             $table->string('local_residente');
-            $table->integer('visto');
+            $table->string('visto');
             $table->timestamps();
         });
     }

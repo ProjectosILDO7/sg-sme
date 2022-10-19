@@ -344,7 +344,7 @@
          editar(id){
             //console.log(id);
             this.btnSave = 'Editar'
-            this.$http.get(this.editUrl+''+id).then(response=>{
+            this.$http.get(this.editUrl+'/'+id).then(response=>{
                 this.form=response.data
                 this.tituloModal = 'Alterar informações do trabalhador'
             }).catch(errors=>{

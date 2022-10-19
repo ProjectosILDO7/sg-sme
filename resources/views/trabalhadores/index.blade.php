@@ -3,18 +3,18 @@
 @section('content')
 <div class="container">
 
-    <pagina tamanho="12" titulo="Trabalhadores">
+    <pagina tamanho="12" titulo="Cidadão estrangeiros">
 
          <tabela-lista
          url-base="/lista"
-         edit-url="/editeTrabalhador/" 
+         edit-url="/editeTrabalhador" 
          id-Modal="modal-1"
-         titulo-Modal="Adicione novo trabalhador"
-         nome-Add-Button='Novo trabalhador'
+         titulo-Modal="Add estrangeiros"
+         nome-Add-Button='Novo Estrangeiros'
          :options="[
-            {value:null, text:'Selecione o estado da residência', disabled:true, selected:true},
-            {value:'Residente', text:'Residente'},
-            {value:'Não residente', text:'Não residente'},
+            {value:null, text:'Selecione o estado dd visto', disabled:true, selected:true},
+            {value:'1', text:'Previlegiado'},
+            {value:'0', text:'Permanencia temporária'},
             ]"
          :fields="[
             { 
@@ -47,16 +47,16 @@
 {{-- fim de lista em tabela --}}
 
 {{-- modal form --}}
-        <modal-form-trabalhador 
+        <modal-form-estrangeiros 
         url-base='/lista'
-        titulo-Modal="Novo trabalhador"
+        titulo-Modal="Novo estrangeiros"
         :options="[
             {value:null, text:'Selecione o estado da residência', disabled:true, selected:true},
             {value:'Residente', text:'Residente'},
             {value:'Não residente', text:'Não residente'},
             ]"
         >
-        </modal-form-trabalhador>
+        </modal-form-estrangeiros>
 {{-- fim modal form --}}
 
     </pagina>

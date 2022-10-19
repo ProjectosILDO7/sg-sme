@@ -16,6 +16,7 @@ class CidadaoEstrangeiroController extends Controller
     public function index()
     {
         //
+        return view('/estrangeiros.index');
     }
 
     /**
