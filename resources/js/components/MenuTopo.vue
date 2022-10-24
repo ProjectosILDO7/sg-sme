@@ -33,7 +33,7 @@
                                 <li><a class="dropdown-item" :href="pgtrabalhadores"><b-icon-people-fill></b-icon-people-fill> Trabalhadores</a></li>
                                 <li><a class="dropdown-item" :href="pgEstrangeiros"><b-icon-people></b-icon-people> Cidadão Estrangeiros</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><b-icon-printer></b-icon-printer> Imprimir doc.</a></li>
+                                <li><a class="dropdown-item" :href="printDoc"><b-icon-printer></b-icon-printer> Imprimir doc.</a></li>
                             </ul>
                         </li>
 
@@ -57,7 +57,7 @@
 
 <script>
     export default {
-        props:['titulo', 'url', 'urlsobre', 'urlcontacto', 'usuarioadmin', 'pgtrabalhadores','pgEstrangeiros', 'toggleNavegatio'],
+        props:['titulo', 'url', 'urlsobre', 'urlcontacto', 'usuarioadmin', 'pgtrabalhadores','pgEstrangeiros', 'toggleNavegatio', 'printDoc'],
         data(){
             return { }
         },

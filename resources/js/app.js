@@ -45,6 +45,7 @@ Vue.component('modal-form-estrangeiros', require('./components/ModalFormEstrange
 Vue.component('icon-de-user', require('./components/IconUser.vue').default);
 Vue.component('form-contacto', require('./components/FormContacto.vue').default);
 Vue.component('form-contacto-right', require('./components/FormContactoRight.vue').default);
+Vue.component('doc-print', require('./components/DocPrint.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

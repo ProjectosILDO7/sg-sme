@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CidadaoEstrangeiroController;
 use App\Http\Controllers\PaginasIniciaisController;
+use App\Http\Controllers\PrintDocumentosController;
 use App\Http\Controllers\TrabalhadorController;
 use App\Http\Controllers\UserConfigController;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +32,9 @@ Auth::routes();
 
 Route::resource('/trabalhadores', TrabalhadorController::class);
 Route::resource('/estrangeiros', CidadaoEstrangeiroController::class);
+
+// print
+route::get('/printDoc', [PrintDocumentosController::class, 'index'])->name('print');
 
 Route::get('/configUser/{id}', [UserConfigController::class, 'formConfigUser'])->name('userConfig')->middleware('auth');
 Route::put('/configUser/{id}', [UserConfigController::class, 'editUser'])->name('EditUserConfig')->middleware('auth');

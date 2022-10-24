@@ -37,6 +37,9 @@
         .corFundo{
             background: black;
         }
+        a:link{
+            text-decoration: none;
+        }
         
     </style>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> --}}
@@ -56,7 +59,8 @@
         <menu-topo 
             titulo="{{ asset('img/sme.png') }}" 
             toggle-Navegatio="{{ __('Toggle navigation') }}"
-            url="{{ url('/') }}" 
+            url="{{ url('/') }}"
+            print-doc ="{{ route('print') }}"
             backgroundColor="bg-dark" 
             urlSobre="{{ url('/sobre') }}" 
             urlContacto="{{ url('/contacto') }}" 

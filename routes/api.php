@@ -3,6 +3,7 @@
 use App\Http\Controllers\ApiController\ApiEstrangeirosController;
 use App\Http\Controllers\ApiController\ApiTrabalhadorController;
 use App\Http\Controllers\ApiController\TrabalhadorControllerApi;
+use App\Http\Controllers\PrintDocumentosController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,7 @@ Route::get('/editeEstrangeiro/{id}', [ApiEstrangeirosController::class, 'formEdi
 Route::put('/updateEstrangeiro/{id}', [ApiEstrangeirosController::class, 'updateEditEstrangeiros'])->name('updateEstrangeiro');
 Route::get('/detalhesEstrangeiro/{id}', [ApiEstrangeirosController::class, 'detalhesEstrangeiro'])->name('detalhesTrabalhador');
 Route::get('/apagarEstrangeiro/{id}', [ApiEstrangeirosController::class, 'apagarEstrangeiro'])->name('apagarTrabalhador');
+@
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
