@@ -249,13 +249,11 @@
   </script>
 
 </body>
-<footer class="bg-dark mb-0 mt-4 small footer">
-    <div class="">
+    <div class="bg-dark mb-0 mt-4 small footer">
         <div class="form-group col-12 text-center">
             <p class="small text-light mt-2">
                 Todos os direitos reservados: S.G - S.M.E&copy;{{ @date('Y') }}
             </p>
         </div>
     </div>
-</footer>
 </html>
