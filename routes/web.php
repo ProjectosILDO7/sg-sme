@@ -35,6 +35,10 @@ Route::resource('/estrangeiros', CidadaoEstrangeiroController::class);
 
 // print
 route::get('/printDoc', [PrintDocumentosController::class, 'index'])->name('print');
+route::get('/printDocTrabResidente', [PrintDocumentosController::class, 'pdfResidente']);
+route::get('/printDocTrabNaoResidente', [PrintDocumentosController::class, 'pdfNaoResidente']);
+route::get('/vistoPrevilegiado', [PrintDocumentosController::class, 'pdfVistoPrevilegiado']);
+route::get('/vistoNaoPrevilegiado', [PrintDocumentosController::class, 'pdfVistoNaoPrevilegiado']);
 
 Route::get('/configUser/{id}', [UserConfigController::class, 'formConfigUser'])->name('userConfig')->middleware('auth');
 Route::put('/configUser/{id}', [UserConfigController::class, 'editUser'])->name('EditUserConfig')->middleware('auth');

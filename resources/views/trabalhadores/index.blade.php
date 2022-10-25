@@ -13,8 +13,8 @@
          nome-Add-Button='Novo Estrangeiros'
          :options="[
             {value:null, text:'Selecione o estado dd visto', disabled:true, selected:true},
-            {value:'1', text:'Previlegiado'},
-            {value:'0', text:'Permanencia temporária'},
+            {value:'Residente', text:'Residente'},
+            {value:'Não residente', text:'Não residente'},
             ]"
          :fields="[
             { 

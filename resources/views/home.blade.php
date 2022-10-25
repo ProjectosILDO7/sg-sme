@@ -2,12 +2,11 @@
 
 @section('content')
 <div class="container">
-
-    <pagina tamanho="12" class="mt-2" titulo="Painel admin">
+    <pagina tamanho="12" class="mb-0" titulo="Painel admin">
 
         <div class="row">
           <div class="form-group col-sm-12 col-md-6">
-              <div class="card bg-primary mt-2">
+              <div class="card bg-primary">
                 <div class="card-header text-light">
                   <div class="row">
                       <div class="form-group col-sm-12 col-md-6 small">
@@ -45,7 +44,7 @@
               </div>
           </div>
 
-          <div class="form-group col-sm-12 col-md-6 mt-2">
+          <div class="form-group col-sm-12 col-md-6">
             <div class="card bg-success">
               <div class="card-header text-light">
                 <div class="row">
@@ -86,14 +85,14 @@
         </div> 
 
         {{-- Graficos --}}
-        <div class="row mt-2">
+        <div class="row mt-1">
            <div class="form-group col-sm-12 col-md-6 mt-2">
                 <div class="card chart-container">
                   <canvas id="lineGrafico"></canvas>
                 </div>
            </div>
 
-           <div class="form-group col-sm-12 col-md-6 mt-2">
+           <div class="form-group col-sm-12 col-md-6 mt-1">
               <div class="card chart-container">
                 <canvas id="barraGrafico"></canvas>
               </div>

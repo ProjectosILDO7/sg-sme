@@ -2,6 +2,8 @@
 
 @section('content')
     <pagina tamanho="8" titulo="Print">
-        <doc-print></doc-print>
+        <doc-print 
+            linkTrabalhadores="/printDocTrabResidente"
+        ></doc-print>
     </pagina>
 @endsection

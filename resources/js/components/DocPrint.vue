@@ -20,48 +20,48 @@
             <div class="row text-sm-center text-md-center" v-if="docpdf">
                 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="/printDocTrabResidente" target="_blank">
                         <b-card
                             border-variant="danger"
                             header="Trab. residente"
                             header-border-variant="danger"
-                            header-text-variant="Trab. residente"
+                            header-text-variant="danger"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-pdf text-danger"></i>
                             </b-card-text>
                         </b-card>
 
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="/printDocTrabNaoResidente" target="_blank">
                         <b-card
                             border-variant="danger"
                             header="Trab. não residente"
                             header-border-variant="danger"
-                            header-text-variant="Trab. não residente"
+                            header-text-variant="danger"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-pdf text-danger"></i>
                             </b-card-text>
                         </b-card>
 
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="/vistoPrevilegiado" target="_blank">
                         <b-card
                             border-variant="danger"
                             header="Visto previlegiado"
                             header-border-variant="danger"
-                            header-text-variant="Visto previlegiado"
+                            header-text-variant="danger"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-pdf text-danger"></i>
                             </b-card-text>
                         </b-card>
 
@@ -69,16 +69,16 @@
                 </div>
 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="/vistoNaoPrevilegiado" target="_blank">
                         <b-card
                             border-variant="danger"
                             header="Visto temporário"
                             header-border-variant="danger"
-                            header-text-variant="Visto temporário"
+                            header-text-variant="danger"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-pdf text-danger"></i>
                             </b-card-text>
                         </b-card>
 
@@ -91,48 +91,48 @@
             <div class="row text-sm-center text-md-center" v-if="docexcel">
                 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <b-card
                             border-variant="success"
                             header="Trab. residente"
                             header-border-variant="success"
-                            header-text-variant="Trab. residente"
+                            header-text-variant="success"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-excel text-success"></i>
                             </b-card-text>
                         </b-card>
 
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <b-card
                             border-variant="success"
                             header="Trab. não residente"
                             header-border-variant="success"
-                            header-text-variant="Trab. não residente"
+                            header-text-variant="success"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-excel text-success"></i>
                             </b-card-text>
                         </b-card>
 
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <b-card
                             border-variant="success"
                             header="Visto previlegiado"
                             header-border-variant="success"
-                            header-text-variant="Visto previlegiado"
+                            header-text-variant="success"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-excel text-success"></i>
                             </b-card-text>
                         </b-card>
 
@@ -140,16 +140,16 @@
                 </div>
 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <b-card
                             border-variant="success"
                             header="Visto temporário"
                             header-border-variant="success"
-                            header-text-variant="Visto temporário"
+                            header-text-variant="success"
                             align="center"
                         >
                             <b-card-text>
-                                <i class="fa fa-file-pdf"></i>
+                                <i class="fa fa-file-excel text-success"></i>
                             </b-card-text>
                         </b-card>
 
@@ -161,7 +161,7 @@
 
 <script>
     export default {
-       props:[],
+       props:['linkTrabalhadores'],
        data() {
          return{
             docpdf:false,

@@ -1,19 +1,17 @@
 <template>
-    <div>
-        <br>
-        <div class="row justify-content-center mt-4">
-            <div :class="definirTamanho">
-                <div class="card">
-                    <div class="card-header">{{ titulo }}</div>
+    <div><br>
+            <div class="row justify-content-center mt-4">
+                <div :class="definirTamanho">
+                    <div class="card">
+                        <div class="card-header">{{ titulo }}</div>
 
-                    <div class="card-body">
-                        <slot></slot>
+                        <div class="card-body">
+                            <slot></slot>
+                        </div>
+
                     </div>
-
-                    
                 </div>
             </div>
-        </div>
     </div>
 </template>
 

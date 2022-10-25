@@ -40,6 +40,16 @@
         a:link{
             text-decoration: none;
         }
+
+        .footer {
+          position: fixed;
+          left: 0;
+          height: 6%;
+          bottom: 0;
+          width: 100%;
+          color: white;
+          text-align: center;
+        }
         
     </style>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> --}}
@@ -239,10 +249,10 @@
   </script>
 
 </body>
-<footer class="bg-white mb-0 mt-4 small">
+<footer class="bg-dark mb-0 mt-4 small footer">
     <div class="">
         <div class="form-group col-12 text-center">
-            <p class="small text-secondary py-4">
+            <p class="small text-light mt-2">
                 Todos os direitos reservados: S.G - S.M.E&copy;{{ @date('Y') }}
             </p>
         </div>
