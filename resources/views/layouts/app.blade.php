@@ -50,17 +50,32 @@
           color: white;
           text-align: center;
         }
+        body, html {
+            width: 100%;
+        }
         
     </style>
+    <script src="{{ asset('js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ asset('js/Chart.bundle.js') }}"></script>
+    <script src="{{ asset('js/chart.min.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/cdb.min.css') }}" />
+
+    <script src="{{ asset('js/cdb.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/9d1d9a82d2.js') }}"></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> --}}
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>}}
+    
+
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.1/Chart.bundle.js"></script>  --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9d1d9a82d2.js"></script>  --}}
     
 </head>
 <body style="background-image: url('../img/background-login.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
@@ -231,8 +246,8 @@
                 label: 'Registo mensal de estrangeiros',
                 backgroundColor: 'rgba(161, 198, 247, 1)',
                 borderColor: 'rgb(47, 128, 237)',
-                data: {{ $graficoEstrangeiros ?? "" }},
-            }]
+                data: {{ $graficoEstrangeiros ?? "" }}
+            }],
             },
             options: {
             scales: {
@@ -249,11 +264,9 @@
   </script>
 
 </body>
-    <div class="bg-dark mb-0 mt-4 small footer">
-        <div class="form-group col-12 text-center">
-            <p class="small text-light mt-2">
-                Todos os direitos reservados: S.G - S.M.E&copy;{{ @date('Y') }}
-            </p>
-        </div>
+
+    <div class="bg-dark mb-0 mt-4 small footer small text-light">
+         <div class="mt-3 small">Todos os direitos reservados: S.G - S.M.E&copy;{{ @date('Y') }}</div>
     </div>
+
 </html>

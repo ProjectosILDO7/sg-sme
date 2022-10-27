@@ -91,7 +91,7 @@
             <div class="row text-sm-center text-md-center" v-if="docexcel">
                 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#" target="_blank">
+                    <a href="/listaTrabalhadoresExcel">
                         <b-card
                             border-variant="success"
                             header="Trab. residente"
@@ -107,7 +107,7 @@
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#" target="_blank">
+                    <a href="/listaTrabalhadoresNaoResidenteExcel">
                         <b-card
                             border-variant="success"
                             header="Trab. não residente"
@@ -123,7 +123,7 @@
                     </a>
                 </div>
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#" target="_blank">
+                    <a href="/listaVistoPrevilegiadoExcel">
                         <b-card
                             border-variant="success"
                             header="Visto previlegiado"
@@ -140,7 +140,7 @@
                 </div>
 
                 <div class="form-group col-sm-12 col-md-3 mb-2">
-                    <a href="#" target="_blank">
+                    <a href="/listaVistoNaoPrevilegiadoExcel">
                         <b-card
                             border-variant="success"
                             header="Visto temporário"

@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="form-group col-12 text-center">
                         <p>
-                            <img :src="imagemTelefone" width="30%" height="30%" alt="" srcset="">
+                            <img :src="imagemTelefone" width="25%" height="25%" alt="" srcset=""></img>
                         </p>
                     </div>
                     <div class="form-group col-12">

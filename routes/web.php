@@ -39,6 +39,11 @@ route::get('/printDocTrabResidente', [PrintDocumentosController::class, 'pdfResi
 route::get('/printDocTrabNaoResidente', [PrintDocumentosController::class, 'pdfNaoResidente']);
 route::get('/vistoPrevilegiado', [PrintDocumentosController::class, 'pdfVistoPrevilegiado']);
 route::get('/vistoNaoPrevilegiado', [PrintDocumentosController::class, 'pdfVistoNaoPrevilegiado']);
+//excel
+route::get('/listaTrabalhadoresExcel', [PrintDocumentosController::class, 'excelExportTrabalhadorResidente']);
+route::get('/listaTrabalhadoresNaoResidenteExcel', [PrintDocumentosController::class, 'excelExportTrabalhadorNaoResidente']);
+route::get('/listaVistoPrevilegiadoExcel', [PrintDocumentosController::class, 'excelExportVistoPrevilegiado']);
+route::get('/listaVistoNaoPrevilegiadoExcel', [PrintDocumentosController::class, 'excelExportNaoPrevilegiado']);
 
 Route::get('/configUser/{id}', [UserConfigController::class, 'formConfigUser'])->name('userConfig')->middleware('auth');
 Route::put('/configUser/{id}', [UserConfigController::class, 'editUser'])->name('EditUserConfig')->middleware('auth');

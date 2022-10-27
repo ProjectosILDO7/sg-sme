@@ -86,7 +86,7 @@
 
         {{-- Graficos --}}
         <div class="row mt-1">
-           <div class="form-group col-sm-12 col-md-6 mt-2">
+           <div class="form-group col-sm-12 col-md-6 mt-1">
                 <div class="card chart-container">
                   <canvas id="lineGrafico"></canvas>
                 </div>
