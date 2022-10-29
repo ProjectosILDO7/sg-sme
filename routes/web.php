@@ -6,6 +6,7 @@ use App\Http\Controllers\PaginasIniciaisController;
 use App\Http\Controllers\PrintDocumentosController;
 use App\Http\Controllers\TrabalhadorController;
 use App\Http\Controllers\UserConfigController;
+use App\Mail\MensagemEmail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,11 @@ Auth::routes();
 
 Route::resource('/trabalhadores', TrabalhadorController::class);
 Route::resource('/estrangeiros', CidadaoEstrangeiroController::class);
+
+//email
+Route::get('/mensagemEmail', function(){
+    return new MensagemEmail();
+});
 
 // print
 route::get('/printDoc', [PrintDocumentosController::class, 'index'])->name('print');
