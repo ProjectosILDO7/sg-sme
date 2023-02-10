@@ -21,22 +21,22 @@
                     <div class="row">
                         <div class="form-group col-sm-12 col-md-6 text-center">
                            <h1>
-                              <i class="fa fa-users"></i>
+                              <i class="fa fa-users fa-lg text-light"></i>
                            </h1>
                         </div>
                         <div class="form-group col-sm-12 col-md-6 text-center">
                           <h1>
-                            {{ $totalTrabalhador }}
+                            <span class="text-light"><h3>{{ $totalTrabalhador }}</h3></span>
                            </h1>
                         </div>
                         <hr>
                         <div class="form-inline col-sm-12 col-md-12 text-center">
                            <span class="text-light small">trabalhadores residentes : 
-                                  <span class="text-bold"> ( <span class="font-weight-bold text-dark">{{ $totalTrabalhadorResidente }}</span> )</span>
+                                  <span class="text-bold"> ( <span class="font-weight-bold text-light">{{ $totalTrabalhadorResidente }}</span> )</span>
                            </span>
 
                            <span class="text-light small">trabalhadores nao residentes : 
-                                  <span class="text-bold"> ( <span class="font-weight-bold text-dark">{{ $totalTrabalhadorNãoResidente }}</span> )</span>
+                                  <span class="text-bold"> ( <span class="font-weight-bold text-light">{{ $totalTrabalhadorNãoResidente }}</span> )</span>
                            </span>
                         </div>
                     </div>
@@ -60,22 +60,22 @@
                   <div class="row">
                       <div class="form-group col-sm-12 col-md-6 text-center">
                          <h1>
-                            <i class="fa fa-users"></i>
+                            <i class="fa fa-users fa-lg text-light"></i>
                          </h1>
                       </div>
                       <div class="form-group col-sm-12 col-md-6 text-center">
                          <h1>
-                            {{ $totalEstrangeiro }}
+                            <span class="text-light"><h3>{{ $totalEstrangeiro }}</h3></span>
                          </h1>
                       </div>
                       <hr>
                       <div class="form-inline col-sm-12 col-md-12 text-center">
                          <span class="text-light small">Visto temporário : 
-                                <span class="text-bold">( <span class="font-weight-bold text-dark">{{ $totalEstrangeiroVistoPrevilegiado }}</span> )</span>
+                                <span class="text-bold">( <span class="font-weight-bold text-light">{{ $totalEstrangeiroVistoPrevilegiado }}</span> )</span>
                          </span>
 
                          <span class="text-light small">Visto Previlegiado : 
-                                <span class="text-bold">( <span class="font-weight-bold text-dark">{{ $totalEstrangeiroVistoTemporario }}</span> )</span>
+                                <span class="text-bold">( <span class="font-weight-bold text-light">{{ $totalEstrangeiroVistoTemporario }}</span> )</span>
                          </span>
                       </div>
                   </div>
